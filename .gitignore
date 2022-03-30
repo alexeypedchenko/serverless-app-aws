@@ -1,0 +1,5 @@
+# credentials
+/.aws/credentials
+
+# dependencies
+/node_modules
