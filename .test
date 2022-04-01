@@ -1,7 +1,10 @@
 curl -i -H "Content-Type: application/json" -X
   POST -d '{"pizzaId":4,"pizza":4,"address":"221B Baker Street"}' https://0bqen2m4mk.execute-api.eu-central-1.amazonaws.com/latest/orders
-  PUT -d '{"pizzaId":2}' https://0bqen2m4mk.execute-api.eu-central-1.amazonaws.com/latest/orders/42
-  DELETE https://0bqen2m4mk.execute-api.eu-central-1.amazonaws.com/latest/orders/42
+  PUT -d '{"pizza": 3, "address": "221b Baker Street"}' https://0bqen2m4mk.execute-api.eu-central-1.amazonaws.com/latest/orders/{id}
+  DELETE https://0bqen2m4mk.execute-api.eu-central-1.amazonaws.com/latest/orders/{id}
 
 curl -i -H "Content-Type: application/json"
   https://0bqen2m4mk.execute-api.eu-central-1.amazonaws.com/latest/orders
+
+
+orderId: 09594f62-2a18-404f-877f-36b85a227914
